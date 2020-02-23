@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "outDir": "./tsDist",
+        "allowJs": true,
+        "target": "es5",
+        "jsx": "react",
+        "experimentalDecorators": true, // 允许装饰器
+        "allowSyntheticDefaultImports": true, // import
+        "module": "esnext",
+        "baseUrl": "./",
+        "paths": {
+            "@lib/*": ["./src/lib/*"]
+        }
+    },
+    "include": [
+        "./src/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
