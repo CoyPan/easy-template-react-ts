@@ -4,6 +4,6 @@
 
 export default {
     log() {
-        console.log('hhehehehe');
+        console.log('hehehe');
     }
 };

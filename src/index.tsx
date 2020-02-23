@@ -11,7 +11,7 @@ import './index.scss';
 const App = () => {
     tools.log();
     return <React.Fragment>
-        Hello World 123
+        Hello World
     </React.Fragment>
 };
 

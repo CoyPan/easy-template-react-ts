@@ -5,12 +5,14 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const hotMiddlewareScript = 'webpack-hot-middleware/client?reload=true';
 
 module.exports = {
     mode: 'development',
-    entry: {
-        app: path.resolve(__dirname, '../../src/index.tsx')
-    },
+    entry: [
+        hotMiddlewareScript,
+        path.resolve(__dirname, '../../src/index.tsx')
+    ],
     output: {
         path: path.resolve(__dirname, '../../output'),
         filename: `[name].js`,
