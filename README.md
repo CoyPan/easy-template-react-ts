@@ -30,6 +30,7 @@
 | | |____tools.js
 | |____index.js                         # 入口文件js
 | |____index.scss                       # 入口文件css
+|____tsconfig.json                      # typescript配置
 ```
 
 ### 自定义

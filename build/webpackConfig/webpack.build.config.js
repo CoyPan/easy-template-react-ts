@@ -21,8 +21,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, '../../dist'),
-        filename: `[name].[hash:8].js`,
-        chunkFilename: `[name].[chunkhash:8].js`,
+        filename: `js/[name].[hash:8].js`,
+        chunkFilename: `js/[name].[chunkhash:8].js`,
         publicPath: '/'
     },
     module: {
@@ -55,7 +55,7 @@ module.exports = {
             "process.env.NODE_ENV": JSON.stringify("production")
         }),
         new MiniCssExtractPlugin({
-            filename:`[name].[contenthash:8].css`
+            filename:`css/[name][hash:5].css`
         }),
         new OptimizeCssAssetsPlugin(),
         new CleanWebpackPlugin(),

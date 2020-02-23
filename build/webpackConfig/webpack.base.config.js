@@ -21,12 +21,11 @@ module.exports = {
                 //     })]
                 // }),
             }
-        },{
-            test: /\.(png|jpe?g|gif)(\?.*)?$/,
-            loader: 'url-loader'
         }, {
-            test: /\.(woff2?|eot|ttf|otf|svg)(\?.*)?$/,
-            loader: 'url-loader'
+            test: /\.(ico|jpg|png|jpeg|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+            use: [{
+                loader: 'file-loader?name=hunsha/assests/[name].[hash:8].[ext]'
+            }]
         }]
     },
     externals: ['fs']
